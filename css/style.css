@@ -112,17 +112,17 @@ main #main-program {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 30px 15px 0px 30px;
+  padding: 30px 15px 0px 15px;
   color: var(--white);
 }
 
-main .program-cards-container{
+#main-program .program-cards-container{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-main .program-cards-container button {
+#main-program .program-cards-container button {
   padding: 5%;
   font-size: 18px;
   background: var(--tomato-bu);
@@ -131,7 +131,11 @@ main .program-cards-container button {
   color: var(--white);
 }
 
-main .program-card {
+#main-program .program-cards-container button:hover {
+  cursor: pointer;
+}
+
+#main-program .program-card {
   background: rgba(255, 255, 255, 0.1);
   margin-bottom: 10px;
   padding: 10px 12px;
@@ -141,21 +145,105 @@ main .program-card {
   width: 100%;
 }
 
-main .program-card img {
+#main-program .program-card img {
   width: 10%;
 }
 
-main .program-card .card-title {
+#main-program .program-card .card-title {
   font-size: 18px;
   margin-left: 10px;
   color: var(--tomato);
   width: 20%;
 }
 
-main .program-card p {
+#main-program .program-card p {
   width: 70%;
   font-size: 15px;
   margin-left: 10px;
 }
 /* Program Schedule Section Styling ends here */
 
+/* Speakers secton styling begins here */
+main #speakers {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: var(--white);
+}
+
+#speakers .featured-speakers-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#speakers .speaker-card {
+  display: flex;
+  position: relative;
+  margin: 0px 30px 60px 0px;
+  z-index: 1;
+}
+
+#speakers .speaker-card .grid-bg {
+  background: url('../assets/img/black-and-white-square-grid2.png');
+  background-size: 150px;
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  top: -15px;
+  left: -15px;
+  z-index: -1;
+}
+
+#speakers .speaker-card .speaker-img {
+  width: 100px;
+  height: 100px;
+  margin-right: 20px;
+}
+
+#speakers .speaker-card p {
+  font-size: 12px;
+  font-weight: 600;
+}
+
+#speakers .speaker-card .speaker-title {
+  color: var(--orange);
+}
+
+#speakers .speaker-card hr {
+  width: 20px;
+  border: 1px solid var(--grey);
+  margin: 10px 0px 15px 0px;
+}
+
+#speakers .bu-more {
+  width: 100%;
+  padding: 10px 0;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  border: 1px solid var(--grey);
+  background: var(--white);
+}
+
+#speakers .bu-more:hover {
+  cursor: pointer;
+}
+
+#speakers .bu-more i {
+  color: var(--orange);
+  margin-left: 5px;
+  font-weight: 900;
+  font-size: 15px;
+}
+
+#speakers .up {
+  transform: rotate(90deg);
+}
+
+
+
+
+
+/* Speakers secton styling begins here */
