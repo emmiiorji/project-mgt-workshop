@@ -1,0 +1,101 @@
+/* Import fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+@import url('http://fonts.cdnfonts.com/css/cocogoose');
+
+/* Primary colors */
+:root {
+  --orange: #ec5242;
+  --tomato: #fc5035;
+  --tomato-bu: #ff4f38;
+  --black: #272a31;
+  --grey: #d3d3d3;
+  --darker-grey: #555555;
+  --white: #fff;
+}
+
+/* Global Styling starts here */
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+body {
+  background-color: var(--black);
+  font-family: 'Lato', sans-serif;
+  color: var(--darker-grey);
+}
+/* Global styling ends here */
+
+/* Header section styling starts here */
+header {
+  background: url('../assets/img/home-bg.jpg') no-repeat;
+  background-size: cover;
+  padding: 20px;
+}
+
+header nav {
+  height: 50px;
+}
+
+header #hamburger {
+  margin-left: 15px;
+}
+
+header .ham-bar {
+  width: 40px;
+  height: 8px;
+  background: var(--darker-grey);
+  margin-bottom: 5px;
+}
+
+header .intro {
+  margin-top: 50px;
+}
+
+header .intro span {
+  color: var(--orange);
+  font-size: 24px;
+}
+
+header #hero-text {
+  font-family: 'COCOGOOSE', sans-serif;
+  background: url('../assets/img/text-background2.jpg') no-repeat;
+  background-size: cover;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  font-size: 2.5rem;
+}
+
+header #keynote {
+  margin: 10px 0px;
+  background: #f3f3f3;
+  padding: 20px;
+  border: 3px solid var(--white);
+  font-size: 1.2rem;
+}
+
+header .event-date {
+  font-family: 'COCOGOOSE', sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.09rem;
+  font-size: 1.9rem;
+  margin: 15px 0;
+}
+
+header .event-venue {
+  font-size: 1.23rem;
+  margin-bottom: 100px;
+}
+/* Header section styling ends here */
