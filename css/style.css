@@ -90,6 +90,7 @@ header #keynote {
   padding: 20px;
   border: 3px solid var(--white);
   font-size: 1.2rem;
+  max-width: 700px;
 }
 
 header .event-date {
@@ -187,7 +188,7 @@ main #speakers {
 }
 
 #speakers .speaker-card .grid-bg {
-  background: url('../assets/img/black-and-white-square-grid2.png');
+  background: url('../assets/img/black-and-white-square-grid.png');
   background-size: 150px;
   height: 50px;
   width: 50px;
@@ -241,9 +242,58 @@ main #speakers {
 #speakers .up {
   transform: rotate(90deg);
 }
+/* Speakers secton styling ends here */
 
+/* Partners section styling begins here */
+.partners {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--grey);
+  padding: 30px 0 50px 0;
+}
 
+.partners .logo-images-cont {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  /* padding-bottom: 50px; */
+}
 
+.partners .logo-images-cont img {
+  width: 70px;
+  /* height: 20px; */
+  margin-right: 30px;
+}
+/* Partners section styling end here */
 
+footer {
+  display: flex;
+  height: 100px;
+  align-items: center;
+  justify-content: center;
+  background: var(--white);
+}
 
-/* Speakers secton styling begins here */
+footer .copy {
+  flex-grow: 1;
+  text-align: right;
+  margin-right: 30px;
+}
+
+footer .copyright {
+  flex-grow: 3;
+}
+
+/* Media Queries */
+@media (min-width: 768) {
+  header {
+    /* background-size: cover; */
+    padding: 0 100px 0 100px;
+    height: 100vh;
+  }
+
+}
