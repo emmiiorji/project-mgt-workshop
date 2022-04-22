@@ -9,7 +9,7 @@
   --tomato-bu: #ff4f38;
   --black: #272a31;
   --grey: #d3d3d3;
-  --darker-grey: #555555;
+  --darker-grey: #555;
   --white: #fff;
 }
 
@@ -23,6 +23,7 @@
 
 a {
   text-decoration: none;
+  color: var(--black);
 }
 
 li {
@@ -55,11 +56,11 @@ header {
   min-height: 100vh;
 }
 
-nav {
+header nav {
   display: flex;
 }
 
-nav .logo {
+header nav .logo {
   display: none;
 }
 
@@ -119,7 +120,8 @@ nav .logo {
 }
 
 /* Partners section styling begins here */
-.partners {
+.partners,
+.past-workshops {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -134,14 +136,17 @@ nav .logo {
   align-items: center;
   justify-content: center;
   position: relative;
+
   /* padding-bottom: 50px; */
 }
 
 .partners .logo-images-cont img {
   width: 70px;
+
   /* height: 20px; */
   margin-right: 30px;
 }
+
 /* Partners section styling ends here */
 
 /* Footer section styling starts here */
@@ -162,11 +167,11 @@ footer .copy {
 footer .copyright {
   flex-grow: 1;
 }
+
 /* Footer styling ends here */
 
 @media (min-width: 768px) {
-
-  nav .logo {
+  header nav .logo {
     display: block;
     font-family: 'COCOGOOSE', sans-serif;
     color: var(--darker-grey);
@@ -195,7 +200,7 @@ footer .copyright {
     padding: 10px 15px;
   }
 
-  nav {
+  header nav {
     padding-left: 80px;
     padding-right: 80px;
     background: var(--white);
