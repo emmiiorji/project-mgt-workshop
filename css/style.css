@@ -13,7 +13,6 @@
   --white: #fff;
 }
 
-/* Global Styling starts here */
 *,
 *::before,
 *::after {
@@ -30,6 +29,12 @@ li {
   list-style-type: none;
 }
 
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 body {
   background-color: var(--black);
   font-family: 'Lato', sans-serif;
@@ -41,208 +46,77 @@ body {
   width: 30px;
   margin: 15px 0 30px 0;
 }
-/* Global styling ends here */
 
 /* Header section styling starts here */
 header {
   background: url('../assets/img/home-bg.jpg') no-repeat;
   background-size: cover;
   padding: 20px;
+  min-height: 100vh;
 }
 
-header nav {
-  height: 50px;
+nav {
+  display: flex;
 }
 
-header #hamburger {
+nav .logo {
+  display: none;
+}
+
+#hamburger {
   margin-left: 15px;
 }
 
-header .ham-bar {
+.ham-bar {
   width: 40px;
   height: 8px;
   background: var(--darker-grey);
   margin-bottom: 5px;
 }
 
-header .intro {
-  margin-top: 50px;
+.menu {
+  display: block;
+  position: fixed;
+  width: 0;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  background: var(--black);
+  text-align: center;
+  transition: all 1s ease;
 }
 
-header .intro span {
+.close {
   color: var(--orange);
-  font-size: 24px;
+  font-size: 25px;
+  margin-top: 40px;
+  margin-left: 80%;
 }
 
-header #hero-text {
-  font-family: 'COCOGOOSE', sans-serif;
-  background: url('../assets/img/text-background2.jpg') no-repeat;
-  background-size: cover;
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
-  background-clip: text;
-  font-size: 2.5rem;
-}
-
-header #keynote {
-  margin: 10px 0px;
-  background: #f3f3f3;
-  padding: 20px;
-  border: 3px solid var(--white);
-  font-size: 1.2rem;
-  max-width: 700px;
-}
-
-header .event-date {
-  font-family: 'COCOGOOSE', sans-serif;
-  font-weight: 700;
-  letter-spacing: 0.09rem;
-  font-size: 1.9rem;
-  margin: 15px 0;
-}
-
-header .event-venue {
-  font-size: 1.23rem;
-  margin-bottom: 100px;
-}
-/* Header section styling ends here */
-
-/* Program Schedule Styling begins here */
-main #main-program {
-  background: url('../assets/img/main-sect_bg.jpg');
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 30px 15px 0px 15px;
-  color: var(--white);
-}
-
-#main-program .program-cards-container{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-#main-program .program-cards-container button {
-  padding: 5%;
-  font-size: 18px;
-  background: var(--tomato-bu);
-  border: none;
-  margin: 30px 0px 40px 0px;
-  color: var(--white);
-}
-
-#main-program .program-cards-container button:hover {
-  cursor: pointer;
-}
-
-#main-program .program-card {
-  background: rgba(255, 255, 255, 0.1);
-  margin-bottom: 10px;
-  padding: 10px 12px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
+.active {
   width: 100%;
 }
 
-#main-program .program-card img {
-  width: 10%;
+.nav-list {
+  margin-top: 70px;
+  margin-left: 28px;
+  margin-right: 28px;
 }
 
-#main-program .program-card .card-title {
-  font-size: 18px;
-  margin-left: 10px;
-  color: var(--tomato);
-  width: 20%;
-}
-
-#main-program .program-card p {
-  width: 70%;
-  font-size: 15px;
-  margin-left: 10px;
-}
-/* Program Schedule Section Styling ends here */
-
-/* Speakers secton styling begins here */
-main #speakers {
-  padding: 30px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background: var(--white);
-}
-
-#speakers .featured-speakers-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center;
-}
-
-#speakers .speaker-card {
-  display: flex;
-  position: relative;
-  margin: 0px 30px 60px 0px;
-  z-index: 1;
-}
-
-#speakers .speaker-card .grid-bg {
-  background: url('../assets/img/black-and-white-square-grid.png');
-  background-size: 150px;
-  height: 50px;
-  width: 50px;
-  position: absolute;
-  top: -15px;
-  left: -15px;
-  z-index: -1;
-}
-
-#speakers .speaker-card .speaker-img {
-  width: 100px;
-  height: 100px;
-  margin-right: 20px;
-}
-
-#speakers .speaker-card p {
-  font-size: 12px;
-  font-weight: 600;
-}
-
-#speakers .speaker-card .speaker-title {
-  color: var(--orange);
-}
-
-#speakers .speaker-card hr {
-  width: 20px;
-  border: 1px solid var(--grey);
-  margin: 10px 0px 15px 0px;
-}
-
-#speakers .bu-more {
-  width: 100%;
-  padding: 10px 0;
+.nav-list li {
   margin-bottom: 20px;
-  text-transform: uppercase;
-  border: 1px solid var(--grey);
-  background: var(--white);
+  padding: 5px 0;
 }
 
-#speakers .bu-more:hover {
-  cursor: pointer;
-}
-
-#speakers .bu-more i {
+.nav-list li a {
+  font-weight: 600;
+  font-size: 24px;
   color: var(--orange);
-  margin-left: 5px;
-  font-weight: 900;
-  font-size: 15px;
 }
 
-#speakers .up {
-  transform: rotate(90deg);
+.nav-list li a:hover {
+  border-bottom: 2px solid var(--orange);
 }
-/* Speakers secton styling ends here */
 
 /* Partners section styling begins here */
 .partners {
@@ -268,8 +142,9 @@ main #speakers {
   /* height: 20px; */
   margin-right: 30px;
 }
-/* Partners section styling end here */
+/* Partners section styling ends here */
 
+/* Footer section styling starts here */
 footer {
   display: flex;
   height: 100px;
@@ -285,15 +160,71 @@ footer .copy {
 }
 
 footer .copyright {
-  flex-grow: 3;
+  flex-grow: 1;
 }
+/* Footer styling ends here */
 
-/* Media Queries */
-@media (min-width: 768) {
-  header {
-    /* background-size: cover; */
-    padding: 0 100px 0 100px;
-    height: 100vh;
+@media (min-width: 768px) {
+
+  nav .logo {
+    display: block;
+    font-family: 'COCOGOOSE', sans-serif;
+    color: var(--darker-grey);
+    width: 110px;
   }
 
+  .menu {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    position: initial;
+    min-width: initial;
+    height: initial;
+    background: initial;
+    backdrop-filter: initial;
+    mix-blend-mode: initial;
+    transition: initial;
+  }
+
+  .close {
+    display: none;
+  }
+
+  #campaign {
+    border: 5px solid var(--orange);
+    padding: 10px 15px;
+  }
+
+  nav {
+    padding-left: 80px;
+    padding-right: 80px;
+    background: var(--white);
+  }
+
+  .nav-list {
+    margin-top: 10px;
+    margin-left: initial;
+    display: flex;
+    gap: 20px;
+    justify-content: flex-end;
+  }
+
+  .nav-list li {
+    margin-top: 5px;
+  }
+
+  .nav-list li a {
+    font-size: 15px;
+    line-height: 20px;
+    color: var(--black);
+    font-weight: 400;
+  }
+
+  .nav-list li:hover {
+    border-bottom: none;
+  }
+
+  .nav-list li:hover a {
+    color: var(--orange);
+  }
 }
