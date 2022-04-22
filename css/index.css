@@ -187,6 +187,7 @@ main #main-program {
 #speakers .up {
   transform: rotate(90deg);
 }
+
 /* Speakers secton styling ends here */
 
 /* Media Queries */

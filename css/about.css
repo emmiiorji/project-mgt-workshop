@@ -9,6 +9,7 @@ header {
 header .intro {
   margin-top: 20px;
   text-align: center;
+
   /* font-size: 2rem; */
 }
 
@@ -24,7 +25,7 @@ header #keynote {
   border-radius: 5px;
   text-align: center;
   font-size: 1.1rem;
-  margin: 20px 0 40px 0px;
+  margin: 20px 0 40px 0;
 }
 
 header .reach-us {
@@ -47,6 +48,7 @@ header nav {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
+
   /* width: 400px;
   height: 400px;
   background: red; */
@@ -78,7 +80,7 @@ header nav {
 
 #gallery1 {
   background: url('../assets/img/gallery1.jpg') no-repeat;
-  background-size: cover
+  background-size: cover;
 }
 
 #gallery2 {
