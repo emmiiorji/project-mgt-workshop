@@ -1,4 +1,4 @@
-@import url('./style.css');
+@import url('./globals.css');
 
 /* Header section styling begins here */
 header {
@@ -22,12 +22,11 @@ header #hero-text {
   background-size: cover;
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
-  background-clip: text;
   font-size: 2.5rem;
 }
 
 header #keynote {
-  margin: 10px 0px;
+  margin: 10px 0;
   background: #f3f3f3;
   padding: 20px;
   border: 3px solid var(--white);
@@ -43,10 +42,12 @@ header .event-date {
   margin: 15px 0;
 }
 
-header .event-venue {
+header .event-venue,
+header .reach-us {
   font-size: 1.23rem;
   margin-bottom: 100px;
 }
+
 /* Header section styling ends here */
 
 /* Program Schedule Styling begins here */
@@ -55,26 +56,27 @@ main #main-program {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 30px 15px 0px 15px;
+  padding: 30px 15px 0 15px;
   color: var(--white);
 }
 
-#main-program .program-cards-container{
+#main-program .program-cards-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
+
 #main-program button {
   padding: 30px;
   font-size: 18px;
   background: var(--tomato-bu);
   border: none;
-  margin: 30px 0px 40px 0px;
+  margin: 30px 0 40px 0;
   color: var(--white);
 }
 
-#main-program .program-cards-container button:hover {
+#main-program button:hover {
   cursor: pointer;
 }
 
@@ -104,6 +106,7 @@ main #main-program {
   font-size: 15px;
   margin-left: 10px;
 }
+
 /* Program Schedule Section Styling ends here */
 
 /* Speakers secton styling begins here */
@@ -125,7 +128,7 @@ main #main-program {
 #speakers .speaker-card {
   display: flex;
   position: relative;
-  margin: 0px 30px 60px 0px;
+  margin: 0 30px 60px 0;
   z-index: 1;
 }
 
@@ -158,7 +161,7 @@ main #main-program {
 #speakers .speaker-card hr {
   width: 20px;
   border: 1px solid var(--grey);
-  margin: 10px 0px 15px 0px;
+  margin: 10px 0 15px 0;
 }
 
 #speakers .bu-more {
@@ -186,8 +189,6 @@ main #main-program {
 }
 /* Speakers secton styling ends here */
 
-
-
 /* Media Queries */
 @media (min-width: 768px) {
   header {
@@ -200,59 +201,59 @@ main #main-program {
   }
 
   header #hero-text {
-    font-size: 3.5rem;
+    font-size: 3rem;
   }
 
   header .intro,
   header #keynote,
   header .event-date,
-  header .event-venue {
+  header .event-venue,
+  header .reach-us {
     margin: 0 130px 0 130px;
   }
 
-  #main-program .program-cards-container{
+  #main-program .program-cards-container {
     padding: 0 40px;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
   }
-  
+
   #main-program .program-card {
     margin-right: 5px;
     flex-direction: column;
     text-align: center;
     width: 150px;
     padding: 10px 0;
-    padding-bottom: auto;
     height: 100%;
   }
-  
+
   #main-program .program-card img {
     width: 40px;
     height: auto;
     margin-bottom: 5px;
   }
-  
+
   #main-program .program-card .card-title {
     font-size: 16px;
     width: 100%;
     text-align: center;
   }
-  
+
   #main-program .program-card p {
     width: 90%;
     font-size: 14px;
     margin: 5px 0 0 0;
   }
-  
-  #speakers .featured-speakers-container {    
+
+  #speakers .featured-speakers-container {
     justify-content: center;
     flex-wrap: wrap;
   }
-  
-  #speakers .speaker-card {   
+
+  #speakers .speaker-card {
     width: 400px;
   }
-  
+
   #speakers .bu-more {
     display: none;
   }
@@ -260,7 +261,7 @@ main #main-program {
 
 @media (min-width: 845px) {
   header #hero-text {
-    font-size: 3rem;
+    font-size: 3.5rem;
   }
 
   #speakers .speaker-card {
