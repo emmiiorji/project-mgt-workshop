@@ -1,0 +1,295 @@
+@import url('./globals.css');
+
+/* Header section styling begins here */
+header {
+  background: url('../assets/img/home-bg.jpg') no-repeat;
+  background-size: cover;
+  padding: 20px;
+}
+
+header .intro {
+  margin-top: 50px;
+}
+
+header .intro span {
+  color: var(--orange);
+  font-size: 24px;
+}
+
+header #hero-text {
+  font-family: 'COCOGOOSE', sans-serif;
+  background: url('../assets/img/text-background2.jpg') no-repeat;
+  background-size: cover;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  font-size: 2.5rem;
+}
+
+header #keynote {
+  margin: 10px 0;
+  background: #f3f3f3;
+  padding: 20px;
+  border: 3px solid var(--white);
+  font-size: 1.2rem;
+  max-width: 600px;
+}
+
+header .event-date {
+  font-family: 'COCOGOOSE', sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.09rem;
+  font-size: 1.9rem;
+  margin: 15px 0;
+}
+
+header .event-venue,
+header .reach-us {
+  font-size: 1.23rem;
+  margin-bottom: 100px;
+}
+
+/* Header section styling ends here */
+
+/* Program Schedule Styling begins here */
+main #main-program {
+  background: url('../assets/img/main-sect_bg.jpg');
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 15px 0 15px;
+  color: var(--white);
+}
+
+#main-program .program-cards-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#main-program button {
+  padding: 30px;
+  font-size: 18px;
+  background: var(--tomato-bu);
+  border: none;
+  margin: 30px 0 40px 0;
+  color: var(--white);
+}
+
+#main-program button:hover {
+  cursor: pointer;
+}
+
+#main-program .program-card {
+  background: rgba(255, 255, 255, 0.1);
+  margin-bottom: 10px;
+  padding: 10px 12px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+#main-program .program-card img {
+  width: 10%;
+}
+
+#main-program .program-card .card-title {
+  font-size: 18px;
+  margin-left: 10px;
+  color: var(--tomato);
+  width: 20%;
+}
+
+#main-program .program-card p {
+  width: 70%;
+  font-size: 15px;
+  margin-left: 10px;
+}
+
+/* Program Schedule Section Styling ends here */
+
+/* Speakers secton styling begins here */
+#speakers {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: var(--white);
+}
+
+#speakers .featured-speakers-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#speakers .speaker-card {
+  display: flex;
+  position: relative;
+  margin: 0 15px 60px 15px;
+  z-index: 1;
+}
+
+#speakers .speaker-card .grid-bg {
+  background: url('../assets/img/black-and-white-square-grid.png');
+  background-size: 150px;
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  top: -15px;
+  left: -15px;
+  z-index: -1;
+}
+
+#speakers .speaker-card .speaker-img {
+  width: 100px;
+  height: 100px;
+  margin-right: 20px;
+}
+
+#speakers .speaker-card p {
+  font-size: 12px;
+  font-weight: 600;
+}
+
+#speakers .speaker-card .speaker-title {
+  color: var(--orange);
+}
+
+#speakers .speaker-card hr {
+  width: 20px;
+  border: 1px solid var(--grey);
+  margin: 10px 0 15px 0;
+}
+
+#speakers .bu-more {
+  width: 100%;
+  padding: 10px 0;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  border: 1px solid var(--grey);
+  background: var(--white);
+}
+
+#speakers .bu-more:hover {
+  cursor: pointer;
+}
+
+#speakers .bu-more i {
+  color: var(--orange);
+  margin-left: 5px;
+  font-weight: 900;
+  font-size: 15px;
+}
+
+#speakers .down {
+  transform: rotate(90deg);
+}
+
+#speakers .up {
+  transform: rotate(-90deg);
+}
+
+#speakers .hide {
+  display: none;
+}
+
+/* Speakers secton styling ends here */
+
+/* Media Queries */
+@media (min-width: 768px) {
+  header {
+    padding: 0 0 0.1px 0;
+  }
+
+  header #hamburger {
+    display: none;
+  }
+
+  header #hero-text {
+    font-size: 3rem;
+  }
+
+  header .intro,
+  header #keynote,
+  header .event-date,
+  header .event-venue,
+  header .reach-us {
+    margin-left: 130px;
+    margin-right: 130px;
+  }
+
+  header .intro {
+    margin-top: 80px;
+  }
+
+  #main-program .program-cards-container {
+    padding: 0 40px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  #main-program .program-card {
+    margin-right: 5px;
+    flex-direction: column;
+    text-align: center;
+    width: 150px;
+    padding: 10px 0;
+    height: 100%;
+  }
+
+  #main-program .program-card img {
+    width: 40px;
+    height: auto;
+    margin-bottom: 5px;
+  }
+
+  #main-program .program-card .card-title {
+    font-size: 16px;
+    width: 100%;
+    text-align: center;
+  }
+
+  #main-program .program-card p {
+    width: 90%;
+    font-size: 14px;
+    margin: 5px 0 0 0;
+  }
+
+  #speakers .featured-speakers-container {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  #speakers .speaker-card {
+    max-width: 300px;
+  }
+
+  #speakers .bu-more {
+    display: none;
+  }
+}
+
+@media (min-width: 845px) {
+  header #hero-text {
+    font-size: 3.5rem;
+  }
+
+  #speakers .speaker-card {
+    max-width: 350px;
+  }
+}
+
+@media (min-width: 937px) {
+  #speakers .speaker-card {
+    max-width: 400px;
+  }
+}
+
+@media (min-width: 1000px) {
+  header #hero-text {
+    font-size: 4rem;
+  }
+}

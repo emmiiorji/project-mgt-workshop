@@ -1,0 +1,159 @@
+@import url('./index.css');
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header .intro {
+  margin-top: 20px;
+  text-align: center;
+}
+
+@media (max-width: 768) {
+  header #hero-text {
+    font-size: 2rem;
+  }
+}
+
+header #keynote {
+  background: var(--white);
+  border: 2px solid var(--grey);
+  border-radius: 5px;
+  text-align: center;
+  font-size: 1.1rem;
+  margin: 20px 0 40px 0;
+}
+
+header .reach-us {
+  text-align: center;
+  font-size: 1rem;
+  margin-bottom: 60px;
+}
+
+header nav {
+  width: 100%;
+}
+
+.conference-logo {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: var(--white);
+}
+
+.logo-description {
+  margin: 0 15%;
+}
+
+.conference-logo h2 {
+  margin-top: 20px;
+  font-size: 32px;
+}
+
+.conference-logo p {
+  line-height: 24px;
+  text-align: center;
+}
+
+.logo-img {
+  height: 200px;
+  border: 2px solid var(--grey);
+  padding: 20px 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 30px 0;
+}
+
+.conf-logo-divide {
+  border: 1px solid var(--grey);
+  width: 100%;
+}
+
+.small {
+  display: block;
+  font-size: smaller;
+  color: var(--grey);
+}
+
+.past-workshops {
+  background: var(--white);
+  color: var(--black);
+}
+
+.past-workshops > p {
+  margin: 0 20px;
+  text-align: center;
+}
+
+#past-workshops-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.past-workshops-card {
+  width: 300px;
+  height: 225px;
+  position: relative;
+  margin: 20px 10px 10px 10px;
+}
+
+@media (min-width: 768) {
+  .conference-logo {
+    padding: 0;
+  }
+
+  .conference-logo h2 {
+    padding: 0;
+  }
+
+  .conference-logo p {
+    width: 50%;
+    margin: auto;
+    line-height: 24px;
+    text-align: center;
+  }
+
+  .past-workshops-card {
+    width: 400px;
+    height: 300px;
+  }
+}
+
+.past-works-content {
+  color: var(--white);
+  text-align: center;
+}
+
+.orange-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(236, 82, 66, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#gallery1 {
+  background: url('../assets/img/gallery1.jpg') no-repeat;
+  background-size: cover;
+}
+
+#gallery2 {
+  background: url('../assets/img/gallery2.jpg') no-repeat;
+  background-size: cover;
+}
+
+footer {
+  background: var(--black);
+  color: var(--white);
+}
