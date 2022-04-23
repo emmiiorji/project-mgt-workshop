@@ -42,6 +42,10 @@ body {
   color: var(--darker-grey);
 }
 
+.hide {
+  display: none;
+}
+
 .heading-underline {
   border: 1px solid var(--orange);
   width: 30px;
@@ -176,6 +180,7 @@ footer .copyright {
     font-family: 'COCOGOOSE', sans-serif;
     color: var(--darker-grey);
     width: 110px;
+    margin-top: 10px;
   }
 
   .menu {
@@ -229,7 +234,8 @@ footer .copyright {
     border-bottom: none;
   }
 
-  .nav-list li:hover a {
+  .nav-list li:hover a,
+  .nav-list li .loaded {
     color: var(--orange);
   }
 }

@@ -184,8 +184,16 @@ main #main-program {
   font-size: 15px;
 }
 
-#speakers .up {
+#speakers .down {
   transform: rotate(90deg);
+}
+
+#speakers .up {
+  transform: rotate(-90deg);
+}
+
+#speakers .hide {
+  display: none;
 }
 
 /* Speakers secton styling ends here */
@@ -193,8 +201,7 @@ main #main-program {
 /* Media Queries */
 @media (min-width: 768px) {
   header {
-    /* padding: 0 130px 0 130px; */
-    padding: 0;
+    padding: 0 0 0.1px 0;
   }
 
   header #hamburger {
@@ -210,7 +217,12 @@ main #main-program {
   header .event-date,
   header .event-venue,
   header .reach-us {
-    margin: 0 130px 0 130px;
+    margin-left: 130px;
+    margin-right: 130px;
+  }
+
+  header .intro {
+    margin-top: 80px;
   }
 
   #main-program .program-cards-container {
