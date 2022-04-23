@@ -41,6 +41,11 @@ header nav {
   color: var(--black);
 }
 
+.past-workshops > p{
+  margin: 0 20px;
+  text-align: center;
+}
+
 #past-workshops-container {
   display: flex;
   align-items: center;
