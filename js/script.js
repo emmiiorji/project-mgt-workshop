@@ -33,7 +33,17 @@ function loadSpeakers() {
 }
 loadSpeakers();
 
-
+function toggleAddMoreButton() {
+  const size = window.matchMedia('(max-width: 780px)');
+  if (size.matches) {
+    Array.from(document.querySelectorAll('#speakers .speaker-card')).forEach((card, index) => {
+      if (index >= 2) {
+        card.classList.toggle('hide');
+      }
+    });
+  }
+}
+toggleAddMoreButton();
 
 
 function toggleMobileMenu() {
