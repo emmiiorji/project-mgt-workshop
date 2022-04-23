@@ -1,10 +1,11 @@
 # Project Managers' Global Workshop
 
-This project is focused on building an conference website showing detailed description of an upcoming submit event titled "Tech them young."
+This project is a website for a Project Managers' Global workshop organized by Novustack.
+
+Images below give the look of the website:
 
 ![screenshot](./assets/img/screenshot.jpg) ![screenshot](./assets/img/desktop-vs-mobile.png)
 
-This project is an website for a Project Managers' Global workshop by Novustack.
 It shows pertinent information about the workshop, including the program, speakers, sponsors, and contact information. A Gallery from past workshops is displayed also.
 
 The development follows a mobile-first approach so you're sure to still have a good feel of the website on mobile devices. The home and about pages only are contained.
