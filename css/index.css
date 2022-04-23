@@ -128,7 +128,7 @@ main #main-program {
 #speakers .speaker-card {
   display: flex;
   position: relative;
-  margin: 0 30px 60px 0;
+  margin: 0 15px 60px 15px;
   z-index: 1;
 }
 
@@ -264,7 +264,7 @@ main #main-program {
   }
 
   #speakers .speaker-card {
-    width: 400px;
+    max-width: 300px;
   }
 
   #speakers .bu-more {
@@ -278,13 +278,13 @@ main #main-program {
   }
 
   #speakers .speaker-card {
-    max-width: 300px;
+    max-width: 350px;
   }
 }
 
 @media (min-width: 937px) {
   #speakers .speaker-card {
-    max-width: 350px;
+    max-width: 400px;
   }
 }
 

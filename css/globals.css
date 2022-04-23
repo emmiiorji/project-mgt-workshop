@@ -79,6 +79,10 @@ header nav .logo {
   margin-bottom: 5px;
 }
 
+.socials {
+  display: none;
+}
+
 .menu {
   display: block;
   position: fixed;
@@ -157,19 +161,14 @@ header nav .logo {
 footer {
   display: flex;
   height: 100px;
+  padding: 0 130px;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   background: var(--white);
 }
 
 footer .copy {
-  flex-grow: 1;
-  text-align: right;
-  margin-right: 30px;
-}
-
-footer .copyright {
-  flex-grow: 1;
+  margin-right: 50px;
 }
 
 /* Footer styling ends here */
@@ -181,6 +180,23 @@ footer .copyright {
     color: var(--darker-grey);
     width: 110px;
     margin-top: 10px;
+  }
+
+  .socials {
+    background: var(--black);
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 8px 100px;
+    gap: 10px;
+    font-size: 12px;
+    color: var(--white);
+  }
+
+  .socials li a {
+    color: var(--gray);
+    font-size: 12px;
   }
 
   .menu {
