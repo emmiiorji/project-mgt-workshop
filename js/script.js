@@ -45,6 +45,23 @@ function toggleAddMoreButton() {
 }
 toggleAddMoreButton();
 
+function toggleShowSpeakers() {
+  const buMore = document.querySelector('#speakers .bu-more');
+  buMore.addEventListener('click', (e) => {
+    toggleAddMoreButton();
+    const arrow = e.target.querySelector('i');
+    if (arrow.classList.contains('down')) {
+      arrow.classList.remove('down');
+      arrow.classList.add('up');
+      buMore.childNodes[0].textContent = 'Less ';
+    } else {
+      arrow.classList.remove('up');
+      arrow.classList.add('down');
+      buMore.childNodes[0].textContent = 'More ';
+    }
+  });
+}
+toggleShowSpeakers();
 
 function toggleMobileMenu() {
   document.querySelectorAll('.menu-element, #hamburger').forEach((element) => element.addEventListener('click', () => {
