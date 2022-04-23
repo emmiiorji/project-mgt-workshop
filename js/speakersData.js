@@ -14,13 +14,13 @@ export default () => [
   {
     name: 'Grace Ejegwa',
     title: 'Software Engineer at Techspecialist',
-    bio: 'Grace studies commons-based per production, and published his seminal book The Wonders of TIIDELab Networks in 2006',
+    bio: 'Grace studies commons-based per production, and published her seminal book The Wonders of TIIDELab Networks in 2006',
     img: './assets/img/Grace-Ejegwa.jpg" class="speaker-img',
   },
   {
     name: 'Judith Amarachi',
     title: 'Digital Marketer at Apple',
-    bio: 'Judith studies commons-based per production, and published his seminal book The Wonders of TIIDELab Networks in 2006',
+    bio: 'Judith studies commons-based per production, and published her seminal book The Wonders of TIIDELab Networks in 2006',
     img: './assets/img/Judith.jpeg" class="speaker-img',
   },
   {
@@ -32,7 +32,7 @@ export default () => [
   {
     name: 'Omotolani Shodunke',
     title: 'Software Engineer',
-    bio: 'Omotolani studies commons-based per production, and published his seminal book The Wonders of TIIDELab Networks in 2006',
+    bio: 'Omotolani studies commons-based per production, and published her seminal book The Wonders of TIIDELab Networks in 2006',
     img: './assets/img/omotolani.jpg" class="speaker-img',
   },
 ];
