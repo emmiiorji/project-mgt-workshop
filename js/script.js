@@ -23,6 +23,19 @@ function createAllSpeakers() {
   return speakersMarkup;
 }
 
+function loadSpeakers() {
+  const speakersSection = document.getElementById('speakers');
+  const content = `<h2>Featured Speakers</h2>
+                <hr class="heading-underline">
+                <div class="featured-speakers-container">${createAllSpeakers()}</div>
+                <button type="button" class="bu-more">More <i class="fa-solid fa-angle-right down"></i></button>`;
+  speakersSection.innerHTML = content;
+}
+loadSpeakers();
+
+
+
+
 function toggleMobileMenu() {
   document.querySelectorAll('.menu-element, #hamburger').forEach((element) => element.addEventListener('click', () => {
     document.querySelector('.menu').classList.toggle('active');
