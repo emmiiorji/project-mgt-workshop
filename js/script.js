@@ -3,7 +3,7 @@ import speakersData from './speakersData.js';
 const speakers = speakersData();
 
 function markupSpeaker(speaker) {
-  return `<div class="speaker-card">
+  return `<article class="speaker-card">
             <div class="grid-bg"></div>
             <img src="${speaker.img}" class="speaker-img" alt="${speaker.name}">
             <div class="speaker-info">
@@ -12,7 +12,7 @@ function markupSpeaker(speaker) {
               <hr class="sep-info">
               <p class="speaker-bio">${speaker.bio}</p>
             </div>
-          </div>`;
+          </article>`;
 }
 
 function createAllSpeakers() {
