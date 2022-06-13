@@ -19,7 +19,7 @@ The development follows a mobile-first approach so you're sure to still have a g
 
 ## Live Demo
 
-[Live Demo Link](https://emmiiorji.github.io/project-mgt-workshop/)
+Live demo [here](https://emmiiorji.github.io/project-mgt-workshop/)
 
 ## Getting Started
 
